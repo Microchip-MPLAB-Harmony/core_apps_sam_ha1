@@ -1,6 +1,6 @@
 [![MCHP](https://www.microchip.com/ResourcePackages/Microchip/assets/dist/images/logo.png)](https://www.microchip.com)
 
-# Title
+# USART driver synchronous - USART echo
 
 This example application demonstrates the synchronous mode of the USART driver by echoing the received characters
 
