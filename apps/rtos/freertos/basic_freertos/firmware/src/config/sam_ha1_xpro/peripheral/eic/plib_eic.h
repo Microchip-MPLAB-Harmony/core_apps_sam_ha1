@@ -1,19 +1,22 @@
 /*******************************************************************************
-  Non-Volatile Memory Controller(NVMCTRL) PLIB.
+  External Interrupt Controller (EIC) PLIB
 
-  Company:
+  Company
     Microchip Technology Inc.
 
-  File Name:
-    plib_nvmctrl.h
+  File Name
+    plib_eic.h
 
-  Summary:
-    Interface definition of NVMCTRL Plib.
+  Summary
+    EIC PLIB Header File.
 
-  Description:
-    This file defines the interface for the NVMCTRL Plib.
-    It allows user to Program, Erase and lock the on-chip Non Volatile Flash
-    Memory.
+  Description
+    This file defines the interface to the EIC peripheral library. This
+    library provides access to and control of the associated peripheral
+    instance.
+
+  Remarks:
+    None.
 *******************************************************************************/
 
 // DOM-IGNORE-BEGIN
@@ -41,8 +44,9 @@
 *******************************************************************************/
 // DOM-IGNORE-END
 
-#ifndef PLIB_NVMCTRL_H
-#define PLIB_NVMCTRL_H
+/* Guards against multiple inclusion */
+#ifndef PLIB_EIC_H
+#define PLIB_EIC_H
 
 // *****************************************************************************
 // *****************************************************************************
@@ -51,69 +55,72 @@
 // *****************************************************************************
 
 #include "device.h"
-#include <stdint.h>
 #include <stdbool.h>
 #include <stddef.h>
 
 // DOM-IGNORE-BEGIN
 #ifdef __cplusplus // Provide C++ Compatibility
- extern "C" {
+
+    extern "C" {
+
 #endif
-
 // DOM-IGNORE-END
+
 // *****************************************************************************
 // *****************************************************************************
-// Section: Preprocessor macros
+// Section: Data Types
 // *****************************************************************************
 // *****************************************************************************
 
-#define NVMCTRL_FLASH_START_ADDRESS        (0x00000000U)
-#define NVMCTRL_FLASH_SIZE                 (0x10000U)
-#define NVMCTRL_FLASH_PAGESIZE             (64U)
-#define NVMCTRL_FLASH_ROWSIZE              (256U)
+/* EIC Pin Count */
+#define EXTINT_COUNT                        (16U)
 
-#define NVMCTRL_RWWEEPROM_START_ADDRESS    (0x00400000U)
-#define NVMCTRL_RWWEEPROM_SIZE             (0x800U)
-#define NVMCTRL_RWWEEPROM_PAGESIZE         (64U)
-#define NVMCTRL_RWWEEPROM_ROWSIZE          (256U)
+typedef enum
+{
+    /* External Interrupt Controller Pin 3 */
+    EIC_PIN_3 = 3,
 
+    EIC_PIN_MAX = 16
 
-#define NVMCTRL_ERROR_NONE 0x0U
-#define NVMCTRL_ERROR_PROG 0x4U
-#define NVMCTRL_ERROR_LOCK 0x8U
-#define NVMCTRL_ERROR_NVM 0x10U
-
-typedef uint32_t NVMCTRL_ERROR;
+} EIC_PIN;
 
 
-void NVMCTRL_Initialize(void);
+typedef void (*EIC_CALLBACK) (uintptr_t context);
 
-bool NVMCTRL_Read( uint32_t *data, uint32_t length, uint32_t address );
+typedef struct
+{
+    /* External Interrupt Pin Callback Handler */
+    EIC_CALLBACK    callback;
 
-bool NVMCTRL_PageWrite( uint32_t* data, uint32_t address );
+    /* External Interrupt Pin Client context */
+    uintptr_t       context;
 
-bool NVMCTRL_RowErase( uint32_t address );
+    /* External Interrupt Pin number */
+    EIC_PIN         eicPinNo;
 
-bool NVMCTRL_RWWEEPROM_Read( uint32_t *data, uint32_t length, const uint32_t address );
-
-bool NVMCTRL_RWWEEPROM_PageWrite( uint32_t* data, uint32_t address );
-
-bool NVMCTRL_RWWEEPROM_RowErase ( uint32_t address );
-
-NVMCTRL_ERROR NVMCTRL_ErrorGet( void );
-
-bool NVMCTRL_IsBusy( void );
-
-void NVMCTRL_RegionLock (uint32_t address);
-
-void NVMCTRL_RegionUnlock (uint32_t address);
+} EIC_CALLBACK_OBJ;
 
 
-void NVMCTRL_CacheInvalidate ( void );
+// *****************************************************************************
+// *****************************************************************************
+// Section: Interface Routines
+// *****************************************************************************
+// *****************************************************************************
 
-// DOM-IGNORE-BEGIN
+void EIC_Initialize(void);
+
+void EIC_InterruptEnable(EIC_PIN pin);
+
+void EIC_InterruptDisable(EIC_PIN pin);
+
+void EIC_CallbackRegister(EIC_PIN pin, EIC_CALLBACK callback, uintptr_t context);
+
+
+
 #ifdef __cplusplus // Provide C++ Compatibility
-}
+
+    }
+
 #endif
-// DOM-IGNORE-END
-#endif // PLIB_NVMCTRL_H
+
+#endif /* PLIB_EIC_H */

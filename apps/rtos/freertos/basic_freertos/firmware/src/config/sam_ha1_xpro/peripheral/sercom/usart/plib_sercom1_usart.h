@@ -1,22 +1,24 @@
 /*******************************************************************************
-  Non-Volatile Memory Controller(NVMCTRL) PLIB.
+  SERCOM Universal Synchronous/Asynchrnous Receiver/Transmitter PLIB
 
-  Company:
+  Company
     Microchip Technology Inc.
 
-  File Name:
-    plib_nvmctrl.h
+  File Name
+    plib_sercom1_usart.h
 
-  Summary:
-    Interface definition of NVMCTRL Plib.
+  Summary
+    USART peripheral library interface.
 
-  Description:
-    This file defines the interface for the NVMCTRL Plib.
-    It allows user to Program, Erase and lock the on-chip Non Volatile Flash
-    Memory.
+  Description
+    This file defines the interface to the USART peripheral library. This
+    library provides access to and control of the associated peripheral
+    instance.
+
+  Remarks:
+    None.
 *******************************************************************************/
 
-// DOM-IGNORE-BEGIN
 /*******************************************************************************
 * Copyright (C) 2018 Microchip Technology Inc. and its subsidiaries.
 *
@@ -39,10 +41,9 @@
 * ANY WAY RELATED TO THIS SOFTWARE WILL NOT EXCEED THE AMOUNT OF FEES, IF ANY,
 * THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
 *******************************************************************************/
-// DOM-IGNORE-END
 
-#ifndef PLIB_NVMCTRL_H
-#define PLIB_NVMCTRL_H
+#ifndef PLIB_SERCOM1_USART_H // Guards against multiple inclusion
+#define PLIB_SERCOM1_USART_H
 
 // *****************************************************************************
 // *****************************************************************************
@@ -50,70 +51,66 @@
 // *****************************************************************************
 // *****************************************************************************
 
-#include "device.h"
-#include <stdint.h>
-#include <stdbool.h>
-#include <stddef.h>
+#include "plib_sercom_usart_common.h"
 
 // DOM-IGNORE-BEGIN
 #ifdef __cplusplus // Provide C++ Compatibility
- extern "C" {
+
+    extern "C" {
+
 #endif
-
 // DOM-IGNORE-END
+
 // *****************************************************************************
 // *****************************************************************************
-// Section: Preprocessor macros
+// Section: Interface Routines
 // *****************************************************************************
 // *****************************************************************************
 
-#define NVMCTRL_FLASH_START_ADDRESS        (0x00000000U)
-#define NVMCTRL_FLASH_SIZE                 (0x10000U)
-#define NVMCTRL_FLASH_PAGESIZE             (64U)
-#define NVMCTRL_FLASH_ROWSIZE              (256U)
+void SERCOM1_USART_Initialize( void );
 
-#define NVMCTRL_RWWEEPROM_START_ADDRESS    (0x00400000U)
-#define NVMCTRL_RWWEEPROM_SIZE             (0x800U)
-#define NVMCTRL_RWWEEPROM_PAGESIZE         (64U)
-#define NVMCTRL_RWWEEPROM_ROWSIZE          (256U)
+bool SERCOM1_USART_SerialSetup( USART_SERIAL_SETUP * serialSetup, uint32_t clkFrequency );
 
+USART_ERROR SERCOM1_USART_ErrorGet( void );
 
-#define NVMCTRL_ERROR_NONE 0x0U
-#define NVMCTRL_ERROR_PROG 0x4U
-#define NVMCTRL_ERROR_LOCK 0x8U
-#define NVMCTRL_ERROR_NVM 0x10U
+uint32_t SERCOM1_USART_FrequencyGet( void );
 
-typedef uint32_t NVMCTRL_ERROR;
+size_t SERCOM1_USART_Write(uint8_t* pWrBuffer, const size_t size );
 
+size_t SERCOM1_USART_WriteCountGet(void);
 
-void NVMCTRL_Initialize(void);
+size_t SERCOM1_USART_WriteFreeBufferCountGet(void);
 
-bool NVMCTRL_Read( uint32_t *data, uint32_t length, uint32_t address );
+size_t SERCOM1_USART_WriteBufferSizeGet(void);
 
-bool NVMCTRL_PageWrite( uint32_t* data, uint32_t address );
+bool SERCOM1_USART_WriteNotificationEnable(bool isEnabled, bool isPersistent);
 
-bool NVMCTRL_RowErase( uint32_t address );
+void SERCOM1_USART_WriteThresholdSet(uint32_t nBytesThreshold);
 
-bool NVMCTRL_RWWEEPROM_Read( uint32_t *data, uint32_t length, const uint32_t address );
-
-bool NVMCTRL_RWWEEPROM_PageWrite( uint32_t* data, uint32_t address );
-
-bool NVMCTRL_RWWEEPROM_RowErase ( uint32_t address );
-
-NVMCTRL_ERROR NVMCTRL_ErrorGet( void );
-
-bool NVMCTRL_IsBusy( void );
-
-void NVMCTRL_RegionLock (uint32_t address);
-
-void NVMCTRL_RegionUnlock (uint32_t address);
+void SERCOM1_USART_WriteCallbackRegister( SERCOM_USART_RING_BUFFER_CALLBACK callback, uintptr_t context);
 
 
-void NVMCTRL_CacheInvalidate ( void );
+
+size_t SERCOM1_USART_Read(uint8_t* pRdBuffer, const size_t size);
+
+size_t SERCOM1_USART_ReadCountGet(void);
+
+size_t SERCOM1_USART_ReadFreeBufferCountGet(void);
+
+size_t SERCOM1_USART_ReadBufferSizeGet(void);
+
+bool SERCOM1_USART_ReadNotificationEnable(bool isEnabled, bool isPersistent);
+
+void SERCOM1_USART_ReadThresholdSet(uint32_t nBytesThreshold);
+
+void SERCOM1_USART_ReadCallbackRegister( SERCOM_USART_RING_BUFFER_CALLBACK callback, uintptr_t context);
 
 // DOM-IGNORE-BEGIN
-#ifdef __cplusplus // Provide C++ Compatibility
-}
+#ifdef __cplusplus  // Provide C++ Compatibility
+
+    }
+
 #endif
 // DOM-IGNORE-END
-#endif // PLIB_NVMCTRL_H
+
+#endif //PLIB_SERCOM1_USART_H
