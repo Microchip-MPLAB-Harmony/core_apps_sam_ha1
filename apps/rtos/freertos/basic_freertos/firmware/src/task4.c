@@ -125,14 +125,14 @@ void TASK4_Tasks ( void )
     bool status = false;
     TickType_t timeNow;
 
-    EIC_CallbackRegister(EIC_PIN_3, EIC_User_Handler, 0);
-
     switchPressSemaphore = xSemaphoreCreateBinary();
 
     if (switchPressSemaphore != NULL)
     {
         status = true;
     }
+
+    EIC_CallbackRegister(EIC_PIN_3, EIC_User_Handler, 0);
 
     while (status == true)
     {
