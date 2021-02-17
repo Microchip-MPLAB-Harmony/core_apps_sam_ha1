@@ -44,7 +44,7 @@ The following applications are provided to demonstrate the typical or interestin
 | [USART driver asynchronous - USART multi instance](apps/driver/usart/async/usart_multi_instance/readme.md) | This example application demonstrates the multi instance feature of the asynchronous mode of the USART driver |
 | [USART driver synchronous - USART echo](apps/driver/usart/sync/usart_echo/readme.md) | This example application demonstrates the synchronous mode of the USART driver by echoing the received characters |
 | [FAT filesystem using NVM Media](apps/fs/nvm_fat/readme.md) | This application shows an example of implementing a FAT disk in the device internal Flash memory |
-| [FreeRTOS basic](apps/rtos/freertos/basic_freertos/readme.md) | This example application blinks an LED to show the FreeRTOS threads that are running and to indicate status |
+| [FreeRTOS basic](apps/rtos/freertos/basic_freertos/readme.md) | This example application demonstrates context switching between four tasks of different priorites. Two tasks run periodically while the other two tasks are event driven |
 | [Time System Service multi-client](apps/system/time/sys_time_multiclient/readme.md) | This example application demonstrates the multi-client system timer functionality |
 
 ____
