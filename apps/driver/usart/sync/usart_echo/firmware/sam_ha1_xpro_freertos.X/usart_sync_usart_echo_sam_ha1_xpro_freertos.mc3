@@ -1,4 +1,4 @@
-<config configName="sam_ha1_xpro_freertos" projectName="usart_sync_usart_echo_sam_ha1_xpro_freertos" configVersion="1.1" device="ATSAMHA1G16AB" deviceLibraryClass="com.microchip.mcc.harmony.Harmony3Library" coreVersion="5.5.0">
+<config configName="sam_ha1_xpro_freertos" projectName="usart_sync_usart_echo_sam_ha1_xpro_freertos" configVersion="1.1" device="ATSAMHA1G16AB" deviceLibraryClass="com.microchip.mcc.harmony.Harmony3Library" coreVersion="5.7.1">
    <usedPackages class="java.util.ArrayList"/>
    <usedClasses class="java.util.TreeMap">
       <entry>
@@ -47,7 +47,7 @@
       </entry>
    </usedClasses>
    <usedLibraries class="java.util.ArrayList">
-      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.harmony.Harmony3Library" version="1.3.1"/>
+      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.harmony.Harmony3Library" version="1.5.3"/>
    </usedLibraries>
    <tokenMap class="java.util.TreeMap">
       <entry>
@@ -2447,510 +2447,122 @@
 </value>
       </entry>
    </tokenMap>
-   <generatedFileHashHistoryMap class="java.util.HashMap">
+   <generatedFileHashHistoryMap class="java.util.TreeMap">
       <entry>
-         <file>..\src\packs\ATSAMHA1G16AB_DFP\component\dac.h</file>
-         <hash>5125fa139d983bc794589b91b46c6a3496cda04d1ef421c6e64a68e395e67a5d</hash>
+         <file>..\src\app_usart_echo.c</file>
+         <hash>0fd206ab36008ef3c8804ae81d2586e360efed8d2c94269e56d86ba3a749fbb1</hash>
       </entry>
       <entry>
-         <file>..\src\config\sam_ha1_xpro_freertos\interrupts.c</file>
-         <hash>c4c2defc3b864fff40309762c8b222877da18c4ebe0531dbc04dd212cf1ff070</hash>
+         <file>..\src\app_usart_echo.h</file>
+         <hash>61b7f761e1b67e5f5e90d798cfc85ca821bde5be950a5e943b478157bf0adc5a</hash>
       </entry>
       <entry>
-         <file>..\src\packs\CMSIS\CMSIS\Core\Include\cachel1_armv7.h</file>
-         <hash>6cdb5b324f2fd1bb5b2f47298ba6e6777e735d7cad3bb8d942cd36e2c6e65328</hash>
+         <file>..\src\config\sam_ha1_xpro_freertos\ATSAMHA1G16AB.ld</file>
+         <hash>d03c8c5a5d44321f5dc5fd3ba5ba742fb776fe6912345e77efecaae50552ce50</hash>
       </entry>
       <entry>
-         <file>..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_gcc.h</file>
-         <hash>3d4e265d0aa42f888385ccf073666e6ebb5ec9f834760b9da27c474e177f708d</hash>
-      </entry>
-      <entry>
-         <file>..\src\third_party\rtos\FreeRTOS\Source\include\task.h</file>
-         <hash>45f2245c914ed25ab26a1ea78ddd4ac74cb6522e1b26ac5c44b614ca4c8cee99</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_ha1_xpro_freertos\interrupts.h</file>
-         <hash>4e43feb8dd61e5683f244e035d27b3cc7afbf3ffa75485a6fd91c874e65a1483</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMHA1G16AB_DFP\component\ac.h</file>
-         <hash>819e3852d651e74e424636e5285dd813ae0ab2efa5b3e53ac6a559a03f779afd</hash>
-      </entry>
-      <entry>
-         <file>..\src\third_party\rtos\FreeRTOS\Source\timers.c</file>
-         <hash>24962ef361f396aaa5e6e33776eeeddaf2fb251c87b6fe50602acc56c537b093</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\gclk.h</file>
-         <hash>8384345816581b66c6327501eb74a5eb29fc7ab49c9e965906e75c49a0c4672c</hash>
-      </entry>
-      <entry>
-         <file>..\src\third_party\rtos\FreeRTOS\Source\include\stream_buffer.h</file>
-         <hash>b876d839460197d94d0f95fb93c6aeb457f6fc572d32258480fed7d4de686b6b</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\sercom3.h</file>
-         <hash>daa8c8f93e1d4bd78cf5ce8125637eeca34456e5facf88aefebc74313bf9de9e</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\pac2.h</file>
-         <hash>c24200ed64eb4f8aaca8b64776505fa83bd037f59b2aca6f139942fa41541526</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_ha1_xpro_freertos\system\int\sys_int_mapping.h</file>
-         <hash>5abf8528dabc1b17378f5d137870597037214fddf33880fa40e9263352da3008</hash>
-      </entry>
-      <entry>
-         <file>..\src\third_party\rtos\FreeRTOS\Source\include\list.h</file>
-         <hash>dc572f54391c0407fc25db360d912fca9118cddae7bd2e3099eb13f18804e5a9</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_ha1_xpro_freertos\driver\usart\drv_usart_definitions.h</file>
-         <hash>214eb352dd2799b2f485b88befc882e793dd00ba4554568cf9b5935d71a42eec</hash>
-      </entry>
-      <entry>
-         <file>..\src\third_party\rtos\FreeRTOS\Source\include\croutine.h</file>
-         <hash>cf52c15fa26a8d4f82b55909b75ebfe2aab25468ba7780748912ddead9812b4e</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\tc5.h</file>
-         <hash>2178ce290305222f3e8402fc23234427278424fc4e12e817cd017d48e71aeeec</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\dsu.h</file>
-         <hash>cba3f4d47c1fc5da1c53af2510c2f46a249df377dc7a464eceb23d44de8c7374</hash>
-      </entry>
-      <entry>
-         <file>..\src\third_party\rtos\FreeRTOS\Source\croutine.c</file>
-         <hash>ebf0cdce261dc4a256c06c0d4ad2582e6026a6da0e973d4cb92092e94ce8f370</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMHA1G16AB_DFP\component\dmac.h</file>
-         <hash>a0460b348043ca109c8ff4aeaab1d60f0c3f0aab6fb555aab94ab1f5e5140f50</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMHA1G16AB_DFP\component\evsys.h</file>
-         <hash>2735f53e1ef7fa4726152881cde8d22d85c1e1f7b6e050cc1d9b221e43306fbc</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_ha1_xpro_freertos\system\dma\sys_dma_mapping.h</file>
-         <hash>9f88a55cde1335782ea00df3eddad5a61a345a2bd15fb73d1d6ddc92380f39d9</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\dac.h</file>
-         <hash>a8fb4891516faea8e2ed6c7d69ddfb77c3af818313c400736cd9aa108aa9c5b4</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\tcc1.h</file>
-         <hash>f59d2a82014a0410ffa4aa0e370fcacc9d76b3f2845f7b3f6cf3f34c9c568631</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_ha1_xpro_freertos\peripheral\sercom\usart\plib_sercom_usart_common.h</file>
-         <hash>63c6e89936ba47e8989478a8be0fa40b406361f2f0dcc1b6cfcd801b50a4bf92</hash>
-      </entry>
-      <entry>
-         <file>..\src\third_party\rtos\FreeRTOS\Source\include\portable.h</file>
-         <hash>7ade8f368002778c723b3c4e14084910b7225cd36363ed0c948e9ea36c6f251f</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\CMSIS\CMSIS\Core\Include\core_cm0plus.h</file>
-         <hash>a19e24c136145b4c72630d0ab7c83a7aef010f3ba165e34c56a05057a2d9fed5</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_ha1_xpro_freertos\stdio\xc32_monitor.c</file>
-         <hash>858f8710d4287200a5ee7f3b3ad7c24f505aed9c05c16956ab0ff9f7bb162a6a</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_ha1_xpro_freertos\startup_xc32.c</file>
-         <hash>e6227d89e36b74af1bc21e00e80b390502c97aaaa65796291f63b2d96cf0678e</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMHA1G16AB_DFP\component\tcc.h</file>
-         <hash>cd834d50a13bf09db22a0c7d87dad65e91aae6306d9d078ac7954e7adfb828af</hash>
-      </entry>
-      <entry>
-         <file>..\src\third_party\rtos\FreeRTOS\Source\list.c</file>
-         <hash>db5c169cf3efd68da1c6a923ac84eebc724d602c940bde0b9b5f01f05028fde4</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_ha1_xpro_freertos\driver\driver_common.h</file>
-         <hash>5217965f6720b4fdf717e99ce9df4f2c9fbd82bbbc9655847166d1eefa806fee</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_ha1_xpro_freertos\device_vectors.h</file>
-         <hash>b8dd97e3d0fe57e1255f4681abe15adbedf375ecdbe84acc5fb13490dd9d496e</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\mtb.h</file>
-         <hash>debd03f76c0a67b838f840a8398ecb712264cf7d6f355a913be1942218032a14</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_ha1_xpro_freertos\driver\driver.h</file>
-         <hash>042fdd289460dbddb8e805850af7e3ac9aea95468e37414959781ebc5b2f454d</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMHA1G16AB_DFP\component\dsu.h</file>
-         <hash>3c8191e3b30ead5d552bdcfa2ad46e59ef20a31c6251d8cc1c258b3716a6f005</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_ha1_xpro_freertos\peripheral\sercom\usart\plib_sercom1_usart.c</file>
-         <hash>618e375eaada21bc6a02300b81b26ef33d04f2590b0fb26fe945cf84c7b730bd</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\rtc.h</file>
-         <hash>20d38a03443bb1cb05c717f7ad65965472b64395d3fd4c5fab1c559328ec6eb4</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_ha1_xpro_freertos\peripheral\sercom\usart\plib_sercom1_usart.h</file>
-         <hash>31ecd4d25e40afbba112cd54d25fd2d83a03ac60ec8af86178f70f70392cdf19</hash>
-      </entry>
-      <entry>
-         <file>..\src\third_party\rtos\FreeRTOS\Source\include\mpu_prototypes.h</file>
-         <hash>2b46a2511ce5d23a56bc83079333d8d0a2e33763e5829c9383252806887a3dc0</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_ha1_xpro_freertos\definitions.h</file>
-         <hash>b9c9cd5a53915c60b7758b9cc040c0a068bf7e18ed7837c6f3886a59f3c6a3f0</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_ha1_xpro_freertos\osal\osal_freertos.h</file>
-         <hash>7ad9faa903d8587bab9490660328f134b8e027f9c24bca47201f3f96f3b99474</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMHA1G16AB_DFP\component\gclk.h</file>
-         <hash>5414a27663fa880445ac70206ecc32450dd6b6f8da596c7fcb7ea8a0bc72cace</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_ha1_xpro_freertos\peripheral\nvmctrl\plib_nvmctrl.h</file>
-         <hash>3dbe7691ca7c7220aa1c9f1126b3297e1c39c6b88467c9ff2f42329a915be9b0</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\CMSIS\CMSIS\Core\Include\mpu_armv7.h</file>
-         <hash>de1b5eb9ed566527b66dc06f4ecb6a43ab6800f7dac47e87c9cb42984dca41bb</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_ha1_xpro_freertos\peripheral\nvmctrl\plib_nvmctrl.c</file>
-         <hash>e6c84ba6d927494c7cdb98103f53b0916b78ebbfb32d0de67f18fbc853a8f869</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_ha1_xpro_freertos\system\system.h</file>
-         <hash>2b75f8e370e5cb2c54f70da7351ee149f0d5a7673e700f39b373099716b31b55</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_armcc.h</file>
-         <hash>d074534d7106cec83474b3b0a897bd2553e1a8895ecbd54f4f4fb25928066eee</hash>
-      </entry>
-      <entry>
-         <file>..\src\third_party\rtos\FreeRTOS\Source\include\FreeRTOS.h</file>
-         <hash>03e9c94aba57e3cf7f4f73bc2d3eb4a96ae38f3425eedb5450622ca286475a0b</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMHA1G16AB_DFP\component\adc.h</file>
-         <hash>363dbb3cf6ae50f623383b071e281ce9b774fba16df1213d3575b4e1b815984f</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_ha1_xpro_freertos\osal\osal_freertos.c</file>
-         <hash>85201651ffb4dad86674b478746e0dc8cd833f98b39c83efc2ae3639f3efdd3b</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\sysctrl.h</file>
-         <hash>22d6f0f6f7b36b70e6540786380599452596bd59fa864fd715b1dc290238454b</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_ha1_xpro_freertos\peripheral\port\plib_port.c</file>
-         <hash>1f1e8e1b640cfc4dddfb5ea4d43271f3201b1f45a0857559d558c102417e54c4</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_ha1_xpro_freertos\device.h</file>
-         <hash>92e2fce3ab98a939ee53827af02f92b8ae48f46f53e439b23d5fa8f8fa5f3038</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\sercom0.h</file>
-         <hash>41e3309be2bb9efee1a0e13a6824406189352911bd057656ad5ca6f08e2dbaf4</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMHA1G16AB_DFP\component\mtb.h</file>
-         <hash>e51cb5c7c9ddcf98ab2c4e29f8515ab238c61dcc21ac9c6eec4de4d46dfe141e</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_ha1_xpro_freertos\system\debug\sys_debug.h</file>
-         <hash>bc6fa321b0be542d074e4564065b7fd69f52556486ac3d892d315b51c434f9ec</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_ha1_xpro_freertos\peripheral\port\plib_port.h</file>
-         <hash>23b7a20bfafb76edcf9ef9296c243cabfc1d909c45c858d3cc30778d66ef4ee0</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\pac1.h</file>
-         <hash>58f26eb976ad675843add918b41e1447f78d0f886cd019f4ad8c8988aa54ed2f</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMHA1G16AB_DFP\samha1g16ab.h</file>
-         <hash>2b0d07b2085bc9012978e1e92235309b7504b4ebb9b322bc7d96667447ce4d95</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMHA1G16AB_DFP\component\fuses.h</file>
-         <hash>0ca66885f3155734b48bc973da715e294c8d765d7cdd680a86b482bd43aaee72</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_ha1_xpro_freertos\osal\osal_definitions.h</file>
-         <hash>af2f2336fac0fd5b49fb2d1c8f81baa4f554101b06f130aaa608cd9685c4ac35</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMHA1G16AB_DFP\component\hmatrixb.h</file>
-         <hash>c0de53e3ab22be04b75caf440010557273b6094444c43fe79ee3d6ae9bdf8c7c</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\port.h</file>
-         <hash>097ce24b58cd09ca4e8c0d9a5736b15f5ea812b86156e59ac3ca350a5a395316</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMHA1G16AB_DFP\component\port.h</file>
-         <hash>7dc08a2dcbc25d25d4a4b0d81a62f925fedd30271e3aee4f0daedb3a9c2dbad7</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_armclang.h</file>
-         <hash>11b39b96ddc1125124762b3423a77b90dd40ea5b4582a3513830245046b24311</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\tc4.h</file>
-         <hash>dc167052de4fe6e7b2076a8323391c3c67a5d4322036d9e772ade2cab240b5be</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_ha1_xpro_freertos\sys_tasks.h</file>
-         <hash>83e8c2e8a1aca54a40389e996109a0e9aab0354aaf579b05d1f7c3d42469bd97</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\sercom4.h</file>
-         <hash>e331e59814db7551d406fa4a6d54b1f2ef07c8dacba11f7bfba7121af7a8887a</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMHA1G16AB_DFP\component\nvmctrl.h</file>
-         <hash>7aab0def198495a0d487d6fddcddea4f8f8e17b98829bea36e4503573cf23b38</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_ha1_xpro_freertos\system\system_module.h</file>
-         <hash>96c74368801b0a7aaa25aec3ec2cb0d483250385f103ffc1ff64089b4ca2c6d9</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_ha1_xpro_freertos\system\dma\sys_dma.c</file>
-         <hash>093cd2dc1d8f6179639884a84681b2f1ac6cfc1f67c48fe43f525224d09aabf4</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_compiler.h</file>
-         <hash>869640702d811c4c63abb52206715c891a93fd03be954df5ad40d378355af3d6</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMHA1G16AB_DFP\component\pm.h</file>
-         <hash>0b362f31154c5301a02940264b0dee2b237cc6d3e9c5f8a93ad62453788ab549</hash>
-      </entry>
-      <entry>
-         <file>..\src\third_party\rtos\FreeRTOS\Source\include\queue.h</file>
-         <hash>1b61c1669091e59798a34c32c0f1e234d3f6a645f47641753eceeb7e1d9ce628</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMHA1G16AB_DFP\component\sercom.h</file>
-         <hash>5a9701ed80a3126dc366ff742765b1ea1a98e891f93b0069cb2612fadc14247b</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_ha1_xpro_freertos\tasks.c</file>
-         <hash>ef4e553c97e698b508701c21cf3b234d545174b6b85924350e0382bb026f5fb0</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\tcc2.h</file>
-         <hash>e1de7bc4099c719a373f7cb4b6f5da622fdd0e66a8739a08a6fcce29ad08e358</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMHA1G16AB_DFP\component\eic.h</file>
-         <hash>9e393cbce4ab8f2353b65b3dcb75ebb4c889a93eb6ebe9063b35464bdfec2794</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_ha1_xpro_freertos\system\dma\sys_dma.h</file>
-         <hash>c55258a896f6f017bf61aa76eca7602cc8162a984b0d440f79e8b6b4bb5818f1</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_ha1_xpro_freertos\device_cache.h</file>
-         <hash>e2914501b361bbc93a56d6915b1bf4fac00277e61f31fdee87a587bc15dea5b6</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMHA1G16AB_DFP\component\tc.h</file>
-         <hash>ee24e949b01f930cbbc11a745f5109aa60ba210ce773141431eeee190ab30ae6</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\fuses.h</file>
-         <hash>46b80de14f462df136840494eaf62eac3114435963765740bfe8f4597896fccd</hash>
-      </entry>
-      <entry>
-         <file>..\src\main.c</file>
-         <hash>d3c233d419e6304bfacbafc18cc68c0f5c26e365f23b20ea40ccfac458f664c5</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_ha1_xpro_freertos\driver\usart\src\drv_usart.c</file>
-         <hash>a305c6149f63590ebeaa4a805c26e2882cacd1224a3ea8bb35a1d1203e4fa019</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_ha1_xpro_freertos\system\int\sys_int.h</file>
-         <hash>dc104ae181fd5309e1bb42896246644fae95915a8e639b23ecfccc8840850274</hash>
-      </entry>
-      <entry>
-         <file>..\src\third_party\rtos\FreeRTOS\Source\include\deprecated_definitions.h</file>
-         <hash>35000a143464bbbd8df7c9a6f066a64598a24da5174a7be33972e62bfbd75f4d</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_ha1_xpro_freertos\system\system_common.h</file>
-         <hash>c9f34bd226f8efab12f5766e77f8355996cd0430b50e0f6ee30258664c494984</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_ha1_xpro_freertos\peripheral\nvic\plib_nvic.c</file>
-         <hash>40744795666b5cc53111a3e78df8f4c5514f2a532ca1b749e2ce539eb4ad187d</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_ha1_xpro_freertos\bsp\bsp.h</file>
-         <hash>47c4652483e9880704dbba0e2bb3f27d9efe054199451d574606145729ed0f52</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_ha1_xpro_freertos\peripheral\nvic\plib_nvic.h</file>
-         <hash>81e813a093101d546799e00723cbf7245e2d18471fa51c8d130c5809cecca03e</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMHA1G16AB_DFP\component\sysctrl.h</file>
-         <hash>2c30635886a50d32a49a49d613f532c6f339a80c3d3d015a5d5319175e0eb935</hash>
+         <file>..\src\config\sam_ha1_xpro_freertos\FreeRTOSConfig.h</file>
+         <hash>d326bc2790d98a558832a8062edb535ec06104aee2a024866418c62abd2410dc</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_ha1_xpro_freertos\bsp\bsp.c</file>
          <hash>5cb21f9aaac63012c30d9eb9e34ab1e613e4c9f515cd7516cedbc9701ff6a16d</hash>
       </entry>
       <entry>
-         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\evsys.h</file>
-         <hash>a6d200aec318bc224848dee22822d97ad18571632767dfc4fce835f7eafcb999</hash>
+         <file>..\src\config\sam_ha1_xpro_freertos\bsp\bsp.h</file>
+         <hash>47c4652483e9880704dbba0e2bb3f27d9efe054199451d574606145729ed0f52</hash>
       </entry>
       <entry>
-         <file>..\src\config\sam_ha1_xpro_freertos\libc_syscalls.c</file>
-         <hash>88bb2e34c939601b5b7ad076556e3ee0fcedf388436b8cddb6d6fd3e9d07472f</hash>
+         <file>..\src\config\sam_ha1_xpro_freertos\configuration.h</file>
+         <hash>a32642d69ae02dc9bf66699861150ac7785c6167c7917475c50b41198c25f1e5</hash>
       </entry>
       <entry>
-         <file>..\src\packs\ATSAMHA1G16AB_DFP\component\wdt.h</file>
-         <hash>0f0951361bfffe277c33b983535444e5194b403b4456b4f587b9dfc869faa333</hash>
+         <file>..\src\config\sam_ha1_xpro_freertos\definitions.h</file>
+         <hash>3a3fb196a10ad983f33aae283af0185e897401ada62c4d5262e1951ca7581990</hash>
       </entry>
       <entry>
-         <file>..\src\config\sam_ha1_xpro_freertos\FreeRTOSConfig.h</file>
-         <hash>82d619dcfe6fb2b091c1c880bfad1d8973509d1be670e57b9b3ed4aa7a165884</hash>
+         <file>..\src\config\sam_ha1_xpro_freertos\device.h</file>
+         <hash>92e2fce3ab98a939ee53827af02f92b8ae48f46f53e439b23d5fa8f8fa5f3038</hash>
       </entry>
       <entry>
-         <file>..\src\config\sam_ha1_xpro_freertos\pin_configurations.csv</file>
-         <hash>b088a78e338ae9437ddf8b102197c0f4cde2d0037f67f305bae29259ecef8fb5</hash>
+         <file>..\src\config\sam_ha1_xpro_freertos\device_cache.h</file>
+         <hash>e2914501b361bbc93a56d6915b1bf4fac00277e61f31fdee87a587bc15dea5b6</hash>
       </entry>
       <entry>
-         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\sercom1.h</file>
-         <hash>d856a1f56c00709b309a00675f4e48bba0df78cb03b4b6beb79592a6e220105b</hash>
+         <file>..\src\config\sam_ha1_xpro_freertos\device_vectors.h</file>
+         <hash>b8dd97e3d0fe57e1255f4681abe15adbedf375ecdbe84acc5fb13490dd9d496e</hash>
       </entry>
       <entry>
-         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\pac0.h</file>
-         <hash>a373f61a43821649a2e4adc450140ef3c1330ab522298832c689cb769556936a</hash>
+         <file>..\src\config\sam_ha1_xpro_freertos\driver\driver.h</file>
+         <hash>042fdd289460dbddb8e805850af7e3ac9aea95468e37414959781ebc5b2f454d</hash>
       </entry>
       <entry>
-         <file>..\src\third_party\rtos\FreeRTOS\Source\include\semphr.h</file>
-         <hash>c624e8cdfc07844d4cf35382f3cc908c872375c7a3048482bdc110bda88cc4f2</hash>
-      </entry>
-      <entry>
-         <file>..\src\third_party\rtos\FreeRTOS\Source\include\timers.h</file>
-         <hash>ee0f596a54137e26ca806ebf067c4c6219a61348f1cbae8861a43d2d4891e1f9</hash>
-      </entry>
-      <entry>
-         <file>..\src\third_party\rtos\FreeRTOS\Source\portable\GCC\ARM_CM0\port.c</file>
-         <hash>77dd5f9b47495242ed6c37a80fcd0a366bb292092c01afb3f1d7bbb18b508cd3</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\tc3.h</file>
-         <hash>c27623b602279da75f5ca4ea8924fd05f221e29799b3352e36795a98a2dcdd09</hash>
+         <file>..\src\config\sam_ha1_xpro_freertos\driver\driver_common.h</file>
+         <hash>5217965f6720b4fdf717e99ce9df4f2c9fbd82bbbc9655847166d1eefa806fee</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_ha1_xpro_freertos\driver\usart\drv_usart.h</file>
          <hash>e13f2ded2fac55dd1f1522f341758ecac9115aef3acb88102a0ebcbe83cbdf79</hash>
       </entry>
       <entry>
-         <file>..\src\config\sam_ha1_xpro_freertos\initialization.c</file>
-         <hash>b49a2139bf07554167ebace99733a459e04ff0d1c54fee5c3cabe7fa2e17181f</hash>
+         <file>..\src\config\sam_ha1_xpro_freertos\driver\usart\drv_usart_definitions.h</file>
+         <hash>214eb352dd2799b2f485b88befc882e793dd00ba4554568cf9b5935d71a42eec</hash>
       </entry>
       <entry>
-         <file>..\src\third_party\rtos\FreeRTOS\Source\FreeRTOS_tasks.c</file>
-         <hash>14020d617b96dd2814e1211f6e3b645bcf5e2bd3179c23fe7dd16bc666fe9463</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\nvmctrl.h</file>
-         <hash>d2253cd3ec1a34b61df71317ecd2033969281dcf8cad82982ce259ec69e09d11</hash>
-      </entry>
-      <entry>
-         <file>..\src\third_party\rtos\FreeRTOS\Source\event_groups.c</file>
-         <hash>76e967b14d231e4f31f014f1564f359a7bfd36bfa263ee6f437afa8c056df657</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\tc7.h</file>
-         <hash>eed6d7e17dc9de43a9845f2afcd093109bf30d671667cae5656581ddd1119f84</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_version.h</file>
-         <hash>2de01ae2556a38eb82c389de23c701805ec63308cfbcf3f84cb12141589b0858</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_iccarm.h</file>
-         <hash>f28119adbc81fb0e3c957c9aebe8fb423ad93634e76ead3caa2b0818d2e123ae</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\sercom5.h</file>
-         <hash>1271f1d73b54696f2086a21b2000e4bdd9280a6100d26c656693528d11e39720</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\adc.h</file>
-         <hash>03fa18729db7af474ab38aa136b78dfae04d3e945dce27b529c5bc5a3325706b</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMHA1G16AB_DFP\component\pac.h</file>
-         <hash>caf72468d58149175dff9c2f08b1c6be96950043044ea5e49ccf01d8c06f9cc1</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\tcc3.h</file>
-         <hash>39bfd281d54edbdaae708571debc56c391dc4ed282f773db12ae596840872959</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMHA1G16AB_DFP\pio\samha1g16ab.h</file>
-         <hash>db2be0a914bb7124398949a49ccf70ecc4c0471bbad2a0450f2ff545f3d9010d</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_ha1_xpro_freertos\user.h</file>
-         <hash>451e0878e9fcf6cf9fab046c1452ea662757988346c7f39e6bc98478ca25f995</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_ha1_xpro_freertos\freertos_hooks.c</file>
-         <hash>3062db4f47d59d8ff5654c75b8f3d09cb07ce6c85fd6dfdc1b48536ac865a526</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMHA1G16AB_DFP\component\ptc.h</file>
-         <hash>7c9c470c817dda716f50517d04fe148503d1146f0949ec6295ee3d720234b81a</hash>
-      </entry>
-      <entry>
-         <file>..\src\third_party\rtos\FreeRTOS\Source\portable\GCC\ARM_CM0\portmacro.h</file>
-         <hash>12067303139aca6ff922678a4be9fb152f0780eb6d0897c1a85527c5fa0cbb73</hash>
-      </entry>
-      <entry>
-         <file>..\src\third_party\rtos\FreeRTOS\Source\portable\MemMang\heap_1.c</file>
-         <hash>286e3fee81c9107fc6dec40405f500cabdca56836d29747c182f0899bb8997fd</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_ha1_xpro_freertos\toolchain_specifics.h</file>
-         <hash>a4f1774c6f1f8c6cd522567536c9e9d75ca63259b868015ac9b0fb0aeeffe1f4</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_armclang_ltm.h</file>
-         <hash>8621969ea669a1b230ff2125a760ef66d575c48cb45e9e457f768909abcbda46</hash>
-      </entry>
-      <entry>
-         <file>..\src\third_party\rtos\FreeRTOS\Source\include\stack_macros.h</file>
-         <hash>3cddf2b3d47ae387e376ac75eb468f9d8ffb575d68c143e08d54af4087474cce</hash>
+         <file>..\src\config\sam_ha1_xpro_freertos\driver\usart\src\drv_usart.c</file>
+         <hash>a305c6149f63590ebeaa4a805c26e2882cacd1224a3ea8bb35a1d1203e4fa019</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_ha1_xpro_freertos\driver\usart\src\drv_usart_local.h</file>
          <hash>7fe9089e87e888d8193a44547cae86afc6f2dce6eb0225f1b6a24b882d593ac4</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_ha1_xpro_freertos\exceptions.c</file>
+         <hash>b0b65c30aa1f7a01ef7be6c1628c331a5ca3eae7dc3bd76ebe647703b76f432d</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_ha1_xpro_freertos\freertos_hooks.c</file>
+         <hash>c97b8f92ad60ff513a27ac7a27b3c6824b75005eb8f7b85fe5ae18deaf568c4e</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_ha1_xpro_freertos\initialization.c</file>
+         <hash>62d65e10dec3d63590a9b369526e955c99e977d3183cc7581be9b291ae45261c</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_ha1_xpro_freertos\interrupts.c</file>
+         <hash>a8d7d5acd98569130055f6ca2dfd763733ed4f99cfd7570502633afff5c005b8</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_ha1_xpro_freertos\interrupts.h</file>
+         <hash>4e43feb8dd61e5683f244e035d27b3cc7afbf3ffa75485a6fd91c874e65a1483</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_ha1_xpro_freertos\libc_syscalls.c</file>
+         <hash>88bb2e34c939601b5b7ad076556e3ee0fcedf388436b8cddb6d6fd3e9d07472f</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_ha1_xpro_freertos\osal\osal.h</file>
+         <hash>1cfe3b61d9693b2369922041eef33fe16b3c1ccd9c85d4ded808b805f90a869c</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_ha1_xpro_freertos\osal\osal_definitions.h</file>
+         <hash>af2f2336fac0fd5b49fb2d1c8f81baa4f554101b06f130aaa608cd9685c4ac35</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_ha1_xpro_freertos\osal\osal_freertos.c</file>
+         <hash>565c6dc54044f91bfd235f3f240e2ddf0ff49189d692fe5be50862d2b6c296f0</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_ha1_xpro_freertos\osal\osal_freertos.h</file>
+         <hash>f9d8c97ce37bbb7516242ec37c4b0db387090cfed54580af683bc0ce126094e0</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_ha1_xpro_freertos\peripheral\clock\plib_clock.c</file>
+         <hash>d1e7a687b9bc15463035301b0cb084134a7bb677a9304342aa1bcd18507a3d28</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_ha1_xpro_freertos\peripheral\clock\plib_clock.h</file>
+         <hash>99bff84fe4a99e6423e2d28f881600300ece34a505bb89f3b4eb61154dbeeb10</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_ha1_xpro_freertos\peripheral\evsys\plib_evsys.c</file>
@@ -2961,108 +2573,508 @@
          <hash>f7d08eb8162f271ce1db384c082586a6624e506aa7f502c64c4ab5a1aadac47d</hash>
       </entry>
       <entry>
-         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\eic.h</file>
-         <hash>0a1e678720fa7fe9032ee4ffc4b282c7e047f0eeb128ea0531f4f239e8dc7be2</hash>
+         <file>..\src\config\sam_ha1_xpro_freertos\peripheral\nvic\plib_nvic.c</file>
+         <hash>eb71a006484c563bc07c53053ff02f6c01cfe1ffaffc6058699a938cca514a1c</hash>
       </entry>
       <entry>
-         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\ptc.h</file>
-         <hash>5cba252b627db7a69b32df6734ba76529638330ba7138a5a5ac0a2676b17e4f7</hash>
+         <file>..\src\config\sam_ha1_xpro_freertos\peripheral\nvic\plib_nvic.h</file>
+         <hash>9936ac782115af41003255283fa2f603f4ff2212d16275b7c80ea8d067a9e208</hash>
       </entry>
       <entry>
-         <file>..\src\config\sam_ha1_xpro_freertos\osal\osal.h</file>
-         <hash>8404fbe44807fa0484ffb38843a72cb9af8e31c9c30bd1b2594e609b8ea317d9</hash>
+         <file>..\src\config\sam_ha1_xpro_freertos\peripheral\nvmctrl\plib_nvmctrl.c</file>
+         <hash>e6c84ba6d927494c7cdb98103f53b0916b78ebbfb32d0de67f18fbc853a8f869</hash>
       </entry>
       <entry>
-         <file>..\src\app_usart_echo.h</file>
-         <hash>61b7f761e1b67e5f5e90d798cfc85ca821bde5be950a5e943b478157bf0adc5a</hash>
+         <file>..\src\config\sam_ha1_xpro_freertos\peripheral\nvmctrl\plib_nvmctrl.h</file>
+         <hash>91c6f0eaac353e48969e49aefc8bbecefde45e514d44b6f98a8b1021383ec74f</hash>
       </entry>
       <entry>
-         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\pm.h</file>
-         <hash>02fc74b461e99c7af571f71b06ce3d4de79b48841b49727674f3380c9425eeea</hash>
+         <file>..\src\config\sam_ha1_xpro_freertos\peripheral\port\plib_port.c</file>
+         <hash>b47039b0c16a8ba136f49359971e0645dff0839fb85a2e50ab5238f81ecc7071</hash>
       </entry>
       <entry>
-         <file>..\src\third_party\rtos\FreeRTOS\Source\include\projdefs.h</file>
-         <hash>8faf4220ded25b00fd72424a2fa4e63e154713ae7b42f7270f1e3289362a6312</hash>
+         <file>..\src\config\sam_ha1_xpro_freertos\peripheral\port\plib_port.h</file>
+         <hash>23b7a20bfafb76edcf9ef9296c243cabfc1d909c45c858d3cc30778d66ef4ee0</hash>
       </entry>
       <entry>
-         <file>..\src\app_usart_echo.c</file>
-         <hash>0fd206ab36008ef3c8804ae81d2586e360efed8d2c94269e56d86ba3a749fbb1</hash>
+         <file>..\src\config\sam_ha1_xpro_freertos\peripheral\sercom\usart\plib_sercom1_usart.c</file>
+         <hash>9d70f662d0a0839f9514ce7d18dd0b67ceaf9ae2de15419e5f22c5a354e6fc58</hash>
       </entry>
       <entry>
-         <file>..\src\config\sam_ha1_xpro_freertos\configuration.h</file>
-         <hash>a32642d69ae02dc9bf66699861150ac7785c6167c7917475c50b41198c25f1e5</hash>
+         <file>..\src\config\sam_ha1_xpro_freertos\peripheral\sercom\usart\plib_sercom1_usart.h</file>
+         <hash>721b767702c85a60634480b2759b12de7c24e3a3d3cbba8e540ed6ca0c083828</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_ha1_xpro_freertos\peripheral\sercom\usart\plib_sercom_usart_common.h</file>
+         <hash>9f02e811b95f0470ca23f3546f3ddf4ccccb385b4d8b8c091899d0d20b0c56e1</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_ha1_xpro_freertos\pin_configurations.csv</file>
+         <hash>b088a78e338ae9437ddf8b102197c0f4cde2d0037f67f305bae29259ecef8fb5</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_ha1_xpro_freertos\startup_xc32.c</file>
+         <hash>e6227d89e36b74af1bc21e00e80b390502c97aaaa65796291f63b2d96cf0678e</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_ha1_xpro_freertos\stdio\xc32_monitor.c</file>
+         <hash>858f8710d4287200a5ee7f3b3ad7c24f505aed9c05c16956ab0ff9f7bb162a6a</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_ha1_xpro_freertos\sys_tasks.h</file>
+         <hash>83e8c2e8a1aca54a40389e996109a0e9aab0354aaf579b05d1f7c3d42469bd97</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_ha1_xpro_freertos\system\debug\sys_debug.h</file>
+         <hash>4162d9e1fab93b8b33f6c8a24726f5dc287ea05c31e3ab984c3c920c725d0882</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_ha1_xpro_freertos\system\dma\sys_dma.c</file>
+         <hash>093cd2dc1d8f6179639884a84681b2f1ac6cfc1f67c48fe43f525224d09aabf4</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_ha1_xpro_freertos\system\dma\sys_dma.h</file>
+         <hash>c55258a896f6f017bf61aa76eca7602cc8162a984b0d440f79e8b6b4bb5818f1</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_ha1_xpro_freertos\system\dma\sys_dma_mapping.h</file>
+         <hash>9f88a55cde1335782ea00df3eddad5a61a345a2bd15fb73d1d6ddc92380f39d9</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_ha1_xpro_freertos\system\int\src\sys_int.c</file>
          <hash>4281667cc2b84c9e4be1f0dfb3f7d42b77d36c5dcf6513d29ff40262f746cfc6</hash>
       </entry>
       <entry>
-         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\dmac.h</file>
-         <hash>a1b96380bf6590a0bafb6f2bd82fd5ae8cdbbe818ac1cd55bc716d0399da6aa4</hash>
+         <file>..\src\config\sam_ha1_xpro_freertos\system\int\sys_int.h</file>
+         <hash>dc104ae181fd5309e1bb42896246644fae95915a8e639b23ecfccc8840850274</hash>
       </entry>
       <entry>
-         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\sercom2.h</file>
-         <hash>42c8900def0370dc55468a70891573614c3737db5b328210b727898400384c21</hash>
+         <file>..\src\config\sam_ha1_xpro_freertos\system\int\sys_int_mapping.h</file>
+         <hash>5abf8528dabc1b17378f5d137870597037214fddf33880fa40e9263352da3008</hash>
       </entry>
       <entry>
-         <file>..\src\third_party\rtos\FreeRTOS\Source\include\message_buffer.h</file>
-         <hash>9a8141d3d6c8044a57d7e448180c9bd2ed32e45ded32be288d095a39dced91ab</hash>
+         <file>..\src\config\sam_ha1_xpro_freertos\system\system.h</file>
+         <hash>2b75f8e370e5cb2c54f70da7351ee149f0d5a7673e700f39b373099716b31b55</hash>
       </entry>
       <entry>
-         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\ac.h</file>
-         <hash>67299bc5b3e552915d5e1d16dac191645a17c2eb3f9cd8215ddd1b51f4cdf492</hash>
+         <file>..\src\config\sam_ha1_xpro_freertos\system\system_common.h</file>
+         <hash>c9f34bd226f8efab12f5766e77f8355996cd0430b50e0f6ee30258664c494984</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_ha1_xpro_freertos\system\system_module.h</file>
+         <hash>96c74368801b0a7aaa25aec3ec2cb0d483250385f103ffc1ff64089b4ca2c6d9</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_ha1_xpro_freertos\tasks.c</file>
+         <hash>791885a9fdd0375e082ccec6168790a88c4bcf8f11cf72674cd5b8931afc050c</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_ha1_xpro_freertos\toolchain_specifics.h</file>
+         <hash>a4f1774c6f1f8c6cd522567536c9e9d75ca63259b868015ac9b0fb0aeeffe1f4</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_ha1_xpro_freertos\user.h</file>
+         <hash>451e0878e9fcf6cf9fab046c1452ea662757988346c7f39e6bc98478ca25f995</hash>
+      </entry>
+      <entry>
+         <file>..\src\main.c</file>
+         <hash>d3c233d419e6304bfacbafc18cc68c0f5c26e365f23b20ea40ccfac458f664c5</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMHA1G16AB_DFP\component\ac.h</file>
+         <hash>819e3852d651e74e424636e5285dd813ae0ab2efa5b3e53ac6a559a03f779afd</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMHA1G16AB_DFP\component\adc.h</file>
+         <hash>363dbb3cf6ae50f623383b071e281ce9b774fba16df1213d3575b4e1b815984f</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMHA1G16AB_DFP\component\dac.h</file>
+         <hash>5125fa139d983bc794589b91b46c6a3496cda04d1ef421c6e64a68e395e67a5d</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMHA1G16AB_DFP\component\dmac.h</file>
+         <hash>a0460b348043ca109c8ff4aeaab1d60f0c3f0aab6fb555aab94ab1f5e5140f50</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMHA1G16AB_DFP\component\dsu.h</file>
+         <hash>3c8191e3b30ead5d552bdcfa2ad46e59ef20a31c6251d8cc1c258b3716a6f005</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMHA1G16AB_DFP\component\eic.h</file>
+         <hash>9e393cbce4ab8f2353b65b3dcb75ebb4c889a93eb6ebe9063b35464bdfec2794</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMHA1G16AB_DFP\component\evsys.h</file>
+         <hash>2735f53e1ef7fa4726152881cde8d22d85c1e1f7b6e050cc1d9b221e43306fbc</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMHA1G16AB_DFP\component\fuses.h</file>
+         <hash>0ca66885f3155734b48bc973da715e294c8d765d7cdd680a86b482bd43aaee72</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMHA1G16AB_DFP\component\gclk.h</file>
+         <hash>5414a27663fa880445ac70206ecc32450dd6b6f8da596c7fcb7ea8a0bc72cace</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMHA1G16AB_DFP\component\hmatrixb.h</file>
+         <hash>c0de53e3ab22be04b75caf440010557273b6094444c43fe79ee3d6ae9bdf8c7c</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMHA1G16AB_DFP\component\mtb.h</file>
+         <hash>e51cb5c7c9ddcf98ab2c4e29f8515ab238c61dcc21ac9c6eec4de4d46dfe141e</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMHA1G16AB_DFP\component\nvmctrl.h</file>
+         <hash>7aab0def198495a0d487d6fddcddea4f8f8e17b98829bea36e4503573cf23b38</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMHA1G16AB_DFP\component\pac.h</file>
+         <hash>caf72468d58149175dff9c2f08b1c6be96950043044ea5e49ccf01d8c06f9cc1</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMHA1G16AB_DFP\component\pm.h</file>
+         <hash>0b362f31154c5301a02940264b0dee2b237cc6d3e9c5f8a93ad62453788ab549</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMHA1G16AB_DFP\component\port.h</file>
+         <hash>7dc08a2dcbc25d25d4a4b0d81a62f925fedd30271e3aee4f0daedb3a9c2dbad7</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMHA1G16AB_DFP\component\ptc.h</file>
+         <hash>7c9c470c817dda716f50517d04fe148503d1146f0949ec6295ee3d720234b81a</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMHA1G16AB_DFP\component\rtc.h</file>
          <hash>dccacaf979274565ff5220df1f81fb3ee95f8a438ca0b3f766c54e85dfebacb7</hash>
       </entry>
       <entry>
-         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\wdt.h</file>
-         <hash>0586eb82ccb53a86d14471fd3ff13d733b8ebeb8c2eb8e35b2f5794ab79e6b63</hash>
+         <file>..\src\packs\ATSAMHA1G16AB_DFP\component\sercom.h</file>
+         <hash>5a9701ed80a3126dc366ff742765b1ea1a98e891f93b0069cb2612fadc14247b</hash>
       </entry>
       <entry>
-         <file>..\src\third_party\rtos\FreeRTOS\Source\include\event_groups.h</file>
-         <hash>7b3dd12a50d649c124c1af8be742671b9965b6f924310bda7984fe1b65c7f54a</hash>
+         <file>..\src\packs\ATSAMHA1G16AB_DFP\component\sysctrl.h</file>
+         <hash>2c30635886a50d32a49a49d613f532c6f339a80c3d3d015a5d5319175e0eb935</hash>
       </entry>
       <entry>
-         <file>..\src\third_party\rtos\FreeRTOS\Source\queue.c</file>
-         <hash>5cdf4fa35fe059446effff5bf20deaf83ddffb08921bc198fda106b1d17dd894</hash>
+         <file>..\src\packs\ATSAMHA1G16AB_DFP\component\tc.h</file>
+         <hash>ee24e949b01f930cbbc11a745f5109aa60ba210ce773141431eeee190ab30ae6</hash>
       </entry>
       <entry>
-         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\tc6.h</file>
-         <hash>eaf3821b76a630210911b6d176a9921eea94d756d7970a6b95cc884d5a1a08b6</hash>
+         <file>..\src\packs\ATSAMHA1G16AB_DFP\component\tcc.h</file>
+         <hash>cd834d50a13bf09db22a0c7d87dad65e91aae6306d9d078ac7954e7adfb828af</hash>
       </entry>
       <entry>
-         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\tcc0.h</file>
-         <hash>947813c8d613bc383a18ec65037312b596823009c87c4512a60519f067b88dc1</hash>
+         <file>..\src\packs\ATSAMHA1G16AB_DFP\component\wdt.h</file>
+         <hash>0f0951361bfffe277c33b983535444e5194b403b4456b4f587b9dfc869faa333</hash>
       </entry>
       <entry>
-         <file>..\src\third_party\rtos\FreeRTOS\Source\include\mpu_wrappers.h</file>
-         <hash>5014408cc33f0f616215f2b48c67b0d47ccc35bfd5f0044ac653b5bbc6cf5778</hash>
+         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\ac.h</file>
+         <hash>67299bc5b3e552915d5e1d16dac191645a17c2eb3f9cd8215ddd1b51f4cdf492</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\adc.h</file>
+         <hash>03fa18729db7af474ab38aa136b78dfae04d3e945dce27b529c5bc5a3325706b</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\dac.h</file>
+         <hash>a8fb4891516faea8e2ed6c7d69ddfb77c3af818313c400736cd9aa108aa9c5b4</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\dmac.h</file>
+         <hash>a1b96380bf6590a0bafb6f2bd82fd5ae8cdbbe818ac1cd55bc716d0399da6aa4</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\dsu.h</file>
+         <hash>cba3f4d47c1fc5da1c53af2510c2f46a249df377dc7a464eceb23d44de8c7374</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\eic.h</file>
+         <hash>0a1e678720fa7fe9032ee4ffc4b282c7e047f0eeb128ea0531f4f239e8dc7be2</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\evsys.h</file>
+         <hash>a6d200aec318bc224848dee22822d97ad18571632767dfc4fce835f7eafcb999</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\fuses.h</file>
+         <hash>46b80de14f462df136840494eaf62eac3114435963765740bfe8f4597896fccd</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\gclk.h</file>
+         <hash>8384345816581b66c6327501eb74a5eb29fc7ab49c9e965906e75c49a0c4672c</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\mtb.h</file>
+         <hash>debd03f76c0a67b838f840a8398ecb712264cf7d6f355a913be1942218032a14</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\nvmctrl.h</file>
+         <hash>d2253cd3ec1a34b61df71317ecd2033969281dcf8cad82982ce259ec69e09d11</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\pac0.h</file>
+         <hash>a373f61a43821649a2e4adc450140ef3c1330ab522298832c689cb769556936a</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\pac1.h</file>
+         <hash>58f26eb976ad675843add918b41e1447f78d0f886cd019f4ad8c8988aa54ed2f</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\pac2.h</file>
+         <hash>c24200ed64eb4f8aaca8b64776505fa83bd037f59b2aca6f139942fa41541526</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\pm.h</file>
+         <hash>02fc74b461e99c7af571f71b06ce3d4de79b48841b49727674f3380c9425eeea</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\port.h</file>
+         <hash>097ce24b58cd09ca4e8c0d9a5736b15f5ea812b86156e59ac3ca350a5a395316</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\ptc.h</file>
+         <hash>5cba252b627db7a69b32df6734ba76529638330ba7138a5a5ac0a2676b17e4f7</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\rtc.h</file>
+         <hash>20d38a03443bb1cb05c717f7ad65965472b64395d3fd4c5fab1c559328ec6eb4</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\sbmatrix.h</file>
          <hash>1f15df1e24b812ffc313731b9bdbbd41f3b9316fd114488a6f18c32d936891ab</hash>
       </entry>
       <entry>
-         <file>..\src\config\sam_ha1_xpro_freertos\exceptions.c</file>
-         <hash>3d788ce1bd25caaaf6b533ec5b06e4b1e753044c1a217dd5cdf8629628ae85a9</hash>
+         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\sercom0.h</file>
+         <hash>41e3309be2bb9efee1a0e13a6824406189352911bd057656ad5ca6f08e2dbaf4</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\sercom1.h</file>
+         <hash>d856a1f56c00709b309a00675f4e48bba0df78cb03b4b6beb79592a6e220105b</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\sercom2.h</file>
+         <hash>42c8900def0370dc55468a70891573614c3737db5b328210b727898400384c21</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\sercom3.h</file>
+         <hash>daa8c8f93e1d4bd78cf5ce8125637eeca34456e5facf88aefebc74313bf9de9e</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\sercom4.h</file>
+         <hash>e331e59814db7551d406fa4a6d54b1f2ef07c8dacba11f7bfba7121af7a8887a</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\sercom5.h</file>
+         <hash>1271f1d73b54696f2086a21b2000e4bdd9280a6100d26c656693528d11e39720</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\sysctrl.h</file>
+         <hash>22d6f0f6f7b36b70e6540786380599452596bd59fa864fd715b1dc290238454b</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\tc3.h</file>
+         <hash>c27623b602279da75f5ca4ea8924fd05f221e29799b3352e36795a98a2dcdd09</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\tc4.h</file>
+         <hash>dc167052de4fe6e7b2076a8323391c3c67a5d4322036d9e772ade2cab240b5be</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\tc5.h</file>
+         <hash>2178ce290305222f3e8402fc23234427278424fc4e12e817cd017d48e71aeeec</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\tc6.h</file>
+         <hash>eaf3821b76a630210911b6d176a9921eea94d756d7970a6b95cc884d5a1a08b6</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\tc7.h</file>
+         <hash>eed6d7e17dc9de43a9845f2afcd093109bf30d671667cae5656581ddd1119f84</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\tcc0.h</file>
+         <hash>947813c8d613bc383a18ec65037312b596823009c87c4512a60519f067b88dc1</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\tcc1.h</file>
+         <hash>f59d2a82014a0410ffa4aa0e370fcacc9d76b3f2845f7b3f6cf3f34c9c568631</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\tcc2.h</file>
+         <hash>e1de7bc4099c719a373f7cb4b6f5da622fdd0e66a8739a08a6fcce29ad08e358</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\tcc3.h</file>
+         <hash>39bfd281d54edbdaae708571debc56c391dc4ed282f773db12ae596840872959</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMHA1G16AB_DFP\instance\wdt.h</file>
+         <hash>0586eb82ccb53a86d14471fd3ff13d733b8ebeb8c2eb8e35b2f5794ab79e6b63</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMHA1G16AB_DFP\pio\samha1g16ab.h</file>
+         <hash>db2be0a914bb7124398949a49ccf70ecc4c0471bbad2a0450f2ff545f3d9010d</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMHA1G16AB_DFP\samha1g16ab.h</file>
+         <hash>2b0d07b2085bc9012978e1e92235309b7504b4ebb9b322bc7d96667447ce4d95</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\CMSIS\CMSIS\Core\Include\cachel1_armv7.h</file>
+         <hash>6cdb5b324f2fd1bb5b2f47298ba6e6777e735d7cad3bb8d942cd36e2c6e65328</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_armcc.h</file>
+         <hash>d074534d7106cec83474b3b0a897bd2553e1a8895ecbd54f4f4fb25928066eee</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_armclang.h</file>
+         <hash>11b39b96ddc1125124762b3423a77b90dd40ea5b4582a3513830245046b24311</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_armclang_ltm.h</file>
+         <hash>8621969ea669a1b230ff2125a760ef66d575c48cb45e9e457f768909abcbda46</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_compiler.h</file>
+         <hash>869640702d811c4c63abb52206715c891a93fd03be954df5ad40d378355af3d6</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_gcc.h</file>
+         <hash>3d4e265d0aa42f888385ccf073666e6ebb5ec9f834760b9da27c474e177f708d</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_iccarm.h</file>
+         <hash>f28119adbc81fb0e3c957c9aebe8fb423ad93634e76ead3caa2b0818d2e123ae</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_version.h</file>
+         <hash>8cda7ac3ff6f0eb5e83c4fe613dd195151b24da54167f5c3c007e599a03f1edc</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\CMSIS\CMSIS\Core\Include\core_cm0plus.h</file>
+         <hash>a19e24c136145b4c72630d0ab7c83a7aef010f3ba165e34c56a05057a2d9fed5</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\CMSIS\CMSIS\Core\Include\mpu_armv7.h</file>
+         <hash>de1b5eb9ed566527b66dc06f4ecb6a43ab6800f7dac47e87c9cb42984dca41bb</hash>
+      </entry>
+      <entry>
+         <file>..\src\third_party\rtos\FreeRTOS\Source\FreeRTOS_tasks.c</file>
+         <hash>b0e2349f8d150fcb569570d73cf8a80da4eee689039a9f291e8b3c36af6f97f4</hash>
+      </entry>
+      <entry>
+         <file>..\src\third_party\rtos\FreeRTOS\Source\croutine.c</file>
+         <hash>0ca8c178b698a6ad5ce3f6f1246ab287bfb5510f3c04e1d00e5cfb49c57fc66b</hash>
+      </entry>
+      <entry>
+         <file>..\src\third_party\rtos\FreeRTOS\Source\event_groups.c</file>
+         <hash>42ca0bc7afdfb48e9089dff2b4b047e1515a93e7fce031756af6c49b2212c215</hash>
+      </entry>
+      <entry>
+         <file>..\src\third_party\rtos\FreeRTOS\Source\include\FreeRTOS.h</file>
+         <hash>7e29c7d9c773561ec4d0125409036f102f1f15162e213d32568ddf3d8ceddfeb</hash>
+      </entry>
+      <entry>
+         <file>..\src\third_party\rtos\FreeRTOS\Source\include\croutine.h</file>
+         <hash>b7060be39f6c8d0ffd169806382eed5a411776f0d69b0fb3ade6b07e678303f9</hash>
+      </entry>
+      <entry>
+         <file>..\src\third_party\rtos\FreeRTOS\Source\include\deprecated_definitions.h</file>
+         <hash>81d325362fc67518de04d5070609e537d0757e4cc6d6332e8118b4f81a4fdce7</hash>
+      </entry>
+      <entry>
+         <file>..\src\third_party\rtos\FreeRTOS\Source\include\event_groups.h</file>
+         <hash>2399a780de0eefe95067f5b7744d5e213ad9c793fc6468a8535a8e604f85cbba</hash>
+      </entry>
+      <entry>
+         <file>..\src\third_party\rtos\FreeRTOS\Source\include\list.h</file>
+         <hash>0848dc9696a2d4d11bb6957fedb6ec5dfb1c2326dfb66af5ca848b1b32a86b66</hash>
+      </entry>
+      <entry>
+         <file>..\src\third_party\rtos\FreeRTOS\Source\include\message_buffer.h</file>
+         <hash>4883fce829d415b7d14d0567965cd97e41634339cd3a72a07b76baebedbc0a57</hash>
+      </entry>
+      <entry>
+         <file>..\src\third_party\rtos\FreeRTOS\Source\include\mpu_prototypes.h</file>
+         <hash>8cb02fee372e1cc1958022e054122d248c1c184cfc00eb3db6d0fbc0bfef87d1</hash>
+      </entry>
+      <entry>
+         <file>..\src\third_party\rtos\FreeRTOS\Source\include\mpu_syscall_numbers.h</file>
+         <hash>ae11f0a0ea07101af83b9fc387662703a188bc3dfd71784ee24e85cc2f518ce0</hash>
+      </entry>
+      <entry>
+         <file>..\src\third_party\rtos\FreeRTOS\Source\include\mpu_wrappers.h</file>
+         <hash>d99486024fd44173ff23c14ee8561b6e0ce6ee41ad6d6a7e7b17ea97a5023e8b</hash>
+      </entry>
+      <entry>
+         <file>..\src\third_party\rtos\FreeRTOS\Source\include\portable.h</file>
+         <hash>d26267188226020346bd048c9dd0e767b91c7023e5ee0d5f9aa7c7c1864de180</hash>
+      </entry>
+      <entry>
+         <file>..\src\third_party\rtos\FreeRTOS\Source\include\projdefs.h</file>
+         <hash>3d37a1403a69a58a07e214f6a9759601cc0fbe53319c5b14e17f4de5fb8ec0b7</hash>
+      </entry>
+      <entry>
+         <file>..\src\third_party\rtos\FreeRTOS\Source\include\queue.h</file>
+         <hash>27b85dc3c610f83fee9208e0dd4d8dfa3168ea2259cbe1662e2f6a0ac55431f5</hash>
+      </entry>
+      <entry>
+         <file>..\src\third_party\rtos\FreeRTOS\Source\include\semphr.h</file>
+         <hash>89a46fcd718990d24f9fea16c681527eec502712ca2d1b0a4e8d6c205f7452e1</hash>
+      </entry>
+      <entry>
+         <file>..\src\third_party\rtos\FreeRTOS\Source\include\stack_macros.h</file>
+         <hash>d167d886d199615eeeca0acb935bf5c99b42c30a322273363ddc8dec03a58174</hash>
+      </entry>
+      <entry>
+         <file>..\src\third_party\rtos\FreeRTOS\Source\include\stream_buffer.h</file>
+         <hash>51da6d9a7cc2cf1504b4f1564e814f422efb9b688fc6e58946f41d0fe23d2d22</hash>
+      </entry>
+      <entry>
+         <file>..\src\third_party\rtos\FreeRTOS\Source\include\task.h</file>
+         <hash>0d71440d1d81d990fa79677c0836712a3e2655ff3ad75478f5a221e2f0583cf8</hash>
+      </entry>
+      <entry>
+         <file>..\src\third_party\rtos\FreeRTOS\Source\include\timers.h</file>
+         <hash>19e373d04e2f01f9f69a9d3017a75a46b4f7b6e8016742702b10e112786d6181</hash>
+      </entry>
+      <entry>
+         <file>..\src\third_party\rtos\FreeRTOS\Source\list.c</file>
+         <hash>55a947c8bd1eec01ebafcb46ccc96cd33090cbdcd3f0114b9ea6a61ebdd6ee7a</hash>
+      </entry>
+      <entry>
+         <file>..\src\third_party\rtos\FreeRTOS\Source\portable\GCC\ARM_CM0\port.c</file>
+         <hash>342bd1d294c4e037f0ffc44bfdec555a26f98e1e2861181d217465a84228107b</hash>
+      </entry>
+      <entry>
+         <file>..\src\third_party\rtos\FreeRTOS\Source\portable\GCC\ARM_CM0\portasm.c</file>
+         <hash>47b7b5250fc68a25640b472877e45dcb82c1d4a3b8555414d27424957f1fc967</hash>
+      </entry>
+      <entry>
+         <file>..\src\third_party\rtos\FreeRTOS\Source\portable\GCC\ARM_CM0\portasm.h</file>
+         <hash>3302ab562299f17937a53340629c61ef951c0c9aeae1ca67fb6f74d158de0997</hash>
+      </entry>
+      <entry>
+         <file>..\src\third_party\rtos\FreeRTOS\Source\portable\GCC\ARM_CM0\portmacro.h</file>
+         <hash>bc9e8a6609581b35338a17dc39df01b6f5d046cdf72d1346c766caf1485b622f</hash>
+      </entry>
+      <entry>
+         <file>..\src\third_party\rtos\FreeRTOS\Source\portable\MemMang\heap_1.c</file>
+         <hash>7155176186aff6591df2f5f82c3b3bfe8f94c96536b604dcdc4f54e0ad8eb6e9</hash>
+      </entry>
+      <entry>
+         <file>..\src\third_party\rtos\FreeRTOS\Source\queue.c</file>
+         <hash>a4c20318c20a5f49a34fc757092818eb1065b19f142394a04889aa40d67a5023</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\stream_buffer.c</file>
-         <hash>0ec303ba296caca5de955dc470bcadd134fb15b192ddf61c9afc92070bc1039a</hash>
+         <hash>b825d6bccefea8a8c06b4a2022dede20af67f5bc2a2e4976947b376bc41613a7</hash>
       </entry>
       <entry>
-         <file>..\src\config\sam_ha1_xpro_freertos\peripheral\clock\plib_clock.h</file>
-         <hash>99bff84fe4a99e6423e2d28f881600300ece34a505bb89f3b4eb61154dbeeb10</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_ha1_xpro_freertos\ATSAMHA1G16AB.ld</file>
-         <hash>d03c8c5a5d44321f5dc5fd3ba5ba742fb776fe6912345e77efecaae50552ce50</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_ha1_xpro_freertos\peripheral\clock\plib_clock.c</file>
-         <hash>d1e7a687b9bc15463035301b0cb084134a7bb677a9304342aa1bcd18507a3d28</hash>
+         <file>..\src\third_party\rtos\FreeRTOS\Source\timers.c</file>
+         <hash>3b936fac70fa25b959b53990cd15c20fb85956cdbe22af4249fde0a94590ff01</hash>
       </entry>
    </generatedFileHashHistoryMap>
 </config>
