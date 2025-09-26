@@ -1,10 +1,4 @@
-﻿---
-title: Harmony 3 driver and system service application examples for SAM HA1 family
-nav_order: 1
-has_children: true
-has_toc: false
----
-[![MCHP](https://www.microchip.com/ResourcePackages/Microchip/assets/dist/images/logo.png)](https://www.microchip.com)
+[![MCHP](https://raw.githubusercontent.com/wiki/Microchip-MPLAB-Harmony/Microchip-MPLAB-Harmony.github.io/images/microchip_logo.png)](https://www.microchip.com)
 
 # Harmony 3 driver and system service application examples for SAM HA1 family
 
@@ -19,36 +13,29 @@ MPLAB® Harmony 3 is an extension of the MPLAB® ecosystem for creating embedded
 This repository contains the MPLAB® Harmony 3 driver and system service application examples for SAM HA1 family
 
 - [Release Notes](release_notes.md)
-- [MPLAB® Harmony License](mplab_harmony_license.md)
+- [License](License.md)
 
 To clone or download these applications from Github, go to the [main page of this repository](https://github.com/Microchip-MPLAB-Harmony/core_apps_sam_ha1) and then click **Clone** button to clone this repository or download as zip file.
-This content can also be downloaded using content manager by following these [instructions](https://github.com/Microchip-MPLAB-Harmony/contentmanager/wiki).
+This content can also be downloaded using MCC content manager available as part of the MPLAB® X IDE.
 
 ## Contents Summary
 
 | Folder     | Description                             |
-| ---        | ---                                     |
+|:----------:|:---------------------------------------:|
 | apps       | Contains driver and system service example applications |
-| docs       | Contains documentation in html format for offline viewing (to be used only after cloning this repository onto a local machine). Use [github pages](https://microchip-mplab-harmony.github.io/core_apps_sam_ha1/) of this repository for viewing it online. |
 
 ## Code Examples
 
-The following applications are provided to demonstrate the typical or interesting usage models of one or more peripheral libraries.
+Click [here](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=CORE_APPS_SAM_HA1_INTRODUCTION&redirect=true) to view the online documentation of code examples hosted in this repository.
 
-| Name | Description |
-| ---- | ----------- |
-| [I2C driver asynchronous - multi slave](apps/driver/i2c/async/i2c_multi_slave/readme.md) | This example application demonstrates the multi-client feature of the asynchronous mode of the I2C driver by communicating with an external EEPROM and a temperature sensor |
-| [I2C EEPROM AT24 driver - EEPROM Read Write](apps/driver/i2c_eeprom/at24/at24_eeprom_read_write/readme.md) | This example application demonstrates how to use the AT24 driver to perform read and write operations on AT24 series of EEPROM.  |
-| [SPI Driver asynchronous - Self loopback multi client](apps/driver/spi/async/spi_self_loopback_multi_client/readme.md) | This example demonstrates the multi client feature of the SPI driver by performing self-loop back with two clients connected on the same SPI bus |
-| [SPI EEPROM AT25 driver - EEPROM Read Write](apps/driver/spi_eeprom/at25/at25_eeprom_read_write/readme.md) | This example application demonstrates how to use the AT25 driver to perform read and write operations on AT25 series of EEPROM |
-| [USART driver asynchronous - USART multi instance](apps/driver/usart/async/usart_multi_instance/readme.md) | This example application demonstrates the multi instance feature of the asynchronous mode of the USART driver |
-| [USART driver synchronous - USART echo](apps/driver/usart/sync/usart_echo/readme.md) | This example application demonstrates the synchronous mode of the USART driver by echoing the received characters |
-| [FreeRTOS basic](apps/rtos/freertos/basic_freertos/readme.md) | This example application demonstrates context switching between four tasks of different priorites. Two tasks run periodically while the other two tasks are event driven |
-| [Time System Service multi-client](apps/system/time/sys_time_multiclient/readme.md) | This example application demonstrates the multi-client system timer functionality |
+To view the documentation offline, follow these steps:
+ - Download the publication as a zip file from [here](https://onlinedocs.microchip.com/download/GUID-3C97C687-BC02-4C7B-907B-1852926F3D29?type=webhelp).
+ - Extract the zip file into a folder.
+ - Navigate to the folder and open **index.html** in a web browser of your choice.
 
 ____
 
-[![License](https://img.shields.io/badge/license-Harmony%20license-orange.svg)](https://github.com/Microchip-MPLAB-Harmony/core_apps_sam_ha1/blob/master/mplab_harmony_license.md)
+[![License](https://img.shields.io/badge/license-Harmony%20license-orange.svg)](https://github.com/Microchip-MPLAB-Harmony/core_apps_sam_ha1/blob/master/License.md)
 [![Latest release](https://img.shields.io/github/release/Microchip-MPLAB-Harmony/core_apps_sam_ha1.svg)](https://github.com/Microchip-MPLAB-Harmony/core_apps_sam_ha1/releases/latest)
 [![Latest release date](https://img.shields.io/github/release-date/Microchip-MPLAB-Harmony/core_apps_sam_ha1.svg)](https://github.com/Microchip-MPLAB-Harmony/core_apps_sam_ha1/releases/latest)
 [![Commit activity](https://img.shields.io/github/commit-activity/y/Microchip-MPLAB-Harmony/core_apps_sam_ha1.svg)](https://github.com/Microchip-MPLAB-Harmony/core_apps_sam_ha1/graphs/commit-activity)
@@ -56,6 +43,8 @@ ____
 
 ____
 
+[![Developer Help](https://img.shields.io/badge/Youtube-Developer%20Help-red.svg)](https://www.youtube.com/MicrochipDeveloperHelp)
+[![Developer Help](https://img.shields.io/badge/XWiki-Developer%20Help-torquiose.svg)](https://developerhelp.microchip.com/xwiki/bin/view/software-tools/harmony/)
 [![Follow us on Youtube](https://img.shields.io/badge/Youtube-Follow%20us%20on%20Youtube-red.svg)](https://www.youtube.com/user/MicrochipTechnology)
 [![Follow us on LinkedIn](https://img.shields.io/badge/LinkedIn-Follow%20us%20on%20LinkedIn-blue.svg)](https://www.linkedin.com/company/microchip-technology)
 [![Follow us on Facebook](https://img.shields.io/badge/Facebook-Follow%20us%20on%20Facebook-blue.svg)](https://www.facebook.com/microchiptechnology/)
